@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>Ejercicio 2 Práctica 2</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript">
+
+			var num1=prompt("Introduzca el primer numero");
+			var num2=prompt("Introduzca el segundo numero");
+
+			function suma(num1, num2){
+				var suma=parseFloat(num1)+parseFloat(num2);
+				var ventana= window.open("", "SUMA");
+				ventana.document.write("<head><title>SUMA</title><meta charset=\"UTF-8\"></head>");
+				ventana.document.write('<body>');
+				ventana.document.write('<p>RESULTADO DE LA SUMA: ');
+				ventana.document.write('<input value="' +suma+ '"/>');
+				ventana.document.write('</p>');
+				ventana.document.write('</body>');
+				return suma;
+			}	
+
+			function resta(num1, num2){
+				var resta=parseFloat(num1)-parseFloat(num2);
+				var ventana= window.open("", "RESTA");
+				ventana.document.write("<head><title>RESTA</title><meta charset=\"UTF-8\"></head>");
+				ventana.document.write('<body>');
+				ventana.document.write('<p>RESULTADO DE LA RESTA: ');
+				ventana.document.write('<input value="' + resta + '"/>');
+				ventana.document.write('</p>');
+				ventana.document.write('</body>');
+				return resta;
+			}
+
+			function producto(num1, num2){
+				var producto=parseFloat(num1)*parseFloat(num2);
+				var ventana= window.open("", "PRODUCTO");
+				ventana.document.write("<head><title>PRODUCTO</title><meta charset=\"UTF-8\"></head>");
+				ventana.document.write('<body>');
+				ventana.document.write('<p>RESULTADO DEL PRODUCTO: ');
+				ventana.document.write('<input value="' + producto+ '"/>');
+				ventana.document.write('</p>');
+				ventana.document.write('</body>');
+				return producto;
+			}
+
+			function cociente(num1, num2){
+				var cociente=parseFloat(num1)/parseFloat(num2);
+				var ventana= window.open("", "COCIENTE");
+				ventana.document.write("<head><title>COCIENTE</title><meta charset=\"UTF-8\"></head>");
+				ventana.document.write('<body>');
+				ventana.document.write('<p>RESULTADO DEL COCIENTE: ');
+				ventana.document.write('<input value="' +cociente+ '"/>');
+				ventana.document.write('</p>');
+				ventana.document.write('</body>');
+				return cociente;
+			}			
+
+		</script>
+	</head>
+	<body>
+		<h1>Ejercicio 2</h1>
+		<button onclick="suma(num1, num2)">+</button>
+		<button onclick="resta(num1, num2)">-</button>
+		<button onclick="producto(num1, num2)">*</button>
+		<button onclick="cociente(num1, num2)">/</button>
+	</body>
+</html>

@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title>Ejercicio 3 Práctica 2</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript">
+
+			var num1=prompt("Introduzca el primer numero");
+			var num2=prompt("Introduzca el segundo numero");
+
+			function suma(num1, num2){
+				var suma=parseFloat(num1)+parseFloat(num2);
+				window.document.write("<head><title>SUMA</title><meta charset=\"UTF-8\"></head>");
+				window.document.write('<body>');
+				window.document.write('<p>RESULTADO DE LA SUMA: ');
+				window.document.write('<input value="' +suma+ '"/>');
+				window.document.write('</p>');
+				window.document.write('</body>');
+				return suma;
+			}	
+
+			function resta(num1, num2){
+				var resta=parseFloat(num1)-parseFloat(num2);
+				window.document.write("<head><title>RESTA</title><meta charset=\"UTF-8\"></head>");
+				window.document.write('<body>');
+				window.document.write('<p>RESULTADO DE LA RESTA: ');
+				window.document.write('<input value="' + resta + '"/>');
+				window.document.write('</p>');
+				window.document.write('</body>');
+				return resta;
+			}
+
+			function producto(num1, num2){
+				var producto=parseFloat(num1)*parseFloat(num2);
+				window.document.write("<head><title>PRODUCTO</title><meta charset=\"UTF-8\"></head>");
+				window.document.write('<body>');
+				window.document.write('<p>RESULTADO DEL PRODUCTO: ');
+				window.document.write('<input value="' + producto+ '"/>');
+				window.document.write('</p>');
+				window.document.write('</body>');
+				return producto;
+			}
+
+			function cociente(num1, num2){
+				var cociente=parseFloat(num1)/parseFloat(num2);
+				window.document.write("<head><title>COCIENTE</title><meta charset=\"UTF-8\"></head>");
+				window.document.write('<body>');
+				window.document.write('<p>RESULTADO DEL COCIENTE: ');
+				window.document.write('<input value="' +cociente+ '"/>');
+				window.document.write('</p>');
+				window.document.write('</body>');
+				return cociente;
+			}			
+
+		</script>
+	</head>
+	<body>
+		<h1>Ejercicio 3</h1>
+		<button onclick="suma(num1, num2)">+</button>
+		<button onclick="resta(num1, num2)">-</button>
+		<button onclick="producto(num1, num2)">*</button>
+		<button onclick="cociente(num1, num2)">/</button>
+	</body>
+</html>
